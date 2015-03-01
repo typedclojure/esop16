@@ -3,7 +3,8 @@
             [clojure.core.typed :refer [check-ns]]))
 
 (deftest type-examples
-  (is (check-ns '[demo.eg1
+  (is (check-ns '[demo.intro
+                  demo.eg1
                   demo.eg2
                   demo.eg3
                   demo.eg4
