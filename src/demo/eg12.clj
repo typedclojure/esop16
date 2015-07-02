@@ -1,4 +1,4 @@
-(ns demo.eg12
+(ns ^:core.typed demo.eg12
   (:require [clojure.core.typed :refer [ann]]
             [demo.eg3 :refer [Expr]]))
 

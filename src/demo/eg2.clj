@@ -1,4 +1,4 @@
-(ns demo.eg2
+(ns ^:core.typed demo.eg2
   (:refer-clojure :exclude [fn])
   (:require [clojure.core.typed :refer [fn U Num]]))
 

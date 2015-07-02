@@ -1,4 +1,4 @@
-(ns demo.eg14
+(ns ^:core.typed demo.eg14
   (:import (java.io File))
   (:require [clojure.core.typed :refer [defalias ann U Str]]))
 
@@ -9,8 +9,8 @@
 (ann maybe-parent [FSM -> (U nil Str)])
 (defmulti maybe-parent :p)
 (defmethod maybe-parent :F [{file :file :as m}]
-  (if (:file m) (.getParent ^File file) nil))
-(defmethod maybe-parent :S [{^String str :str}]
+  (if (:file m) (.getParent file) nil))
+(defmethod maybe-parent :S [{str :str}]
   (do (if str nil (throw (Exception.)))
       (.getParent (File. str))))
 

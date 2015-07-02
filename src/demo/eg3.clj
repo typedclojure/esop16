@@ -1,4 +1,4 @@
-(ns demo.eg3
+(ns ^:core.typed demo.eg3
   (:refer-clojure :exclude [fn defn])
   (:require [clojure.core.typed :refer 
              [defalias Num U fn ann-form defn Kw Any ann]]))

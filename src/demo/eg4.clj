@@ -1,4 +1,4 @@
-(ns demo.eg4
+(ns ^:core.typed demo.eg4
   (:refer-clojure :exclude [defn])
   (:require [clojure.core.typed :refer [defalias HMap Int defn ann]]))
 
