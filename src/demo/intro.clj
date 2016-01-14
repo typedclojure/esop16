@@ -1,7 +1,9 @@
 (ns demo.intro
-  (:require [clojure.core.typed :refer [ann Str U]])
-  (:import (java.io File)))
+  (:import (java.io File))
+  (:require [clojure.core.typed :refer [ann Str U]]))
 
-(ann parent ['{:file (U nil File)} -> (U nil Str)])
-(defn parent [{^File f :file}]
-  (if f (.getParent f) nil))
+(ann pname [(U File String) -> (U nil String)])
+(defmulti pname class) ; multimethod dispatching on class of argument
+(defmethod pname String [s] (pname (new File s))) ; String case
+(defmethod pname File [f] (.getName f)) ; File case, static null check
+(pname "STAINS/JELLY") ;=> "JELLY" :- (U nil Str)
