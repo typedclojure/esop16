@@ -11,7 +11,7 @@ To check all examples, run `make test`.
 For a Clojure REPL, run `make repl`. The `require` function loads and type checks namespaces.
 
 ```clojure
-clojure.core.typed=> (require 'demo.eg1)
+clojure.core.typed=> (require 'demo.example1)
 nil
 ```
 
