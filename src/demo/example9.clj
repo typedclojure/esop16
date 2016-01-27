@@ -1,7 +1,8 @@
 (ns demo.example9
   {:lang :core.typed}
   (:refer-clojure :exclude [fn])
-  (:require [clojure.core.typed :refer [ann Int fn]]))
+  (:require [clojure.core.typed :refer [ann Int fn]]
+            [demo.example8 :refer [Order]]))
 
 (ann desserts' [Order -> Int])
 (defmulti desserts'

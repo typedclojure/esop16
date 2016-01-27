@@ -1,6 +1,10 @@
 (ns demo.example8
   {:lang :core.typed}
-  (:require [clojure.core.typed :refer [ann Int]]))
+  (:require [clojure.core.typed :refer [defalias U ann Int]]))
+
+(defalias Order "A meal order, tracking dessert quantities."
+  (U '{:Meal ':lunch, :desserts Int} '{:Meal ':dinner :desserts Int}
+     '{:Meal ':combo :meal1 Order :meal2 Order}))
 
 (ann desserts [Order -> Int])
 (defmulti desserts :Meal) ; dispatch on :Meal entry
