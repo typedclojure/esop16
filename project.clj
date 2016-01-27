@@ -1,8 +1,7 @@
 (defproject demo "0.1.0-SNAPSHOT"
   :description "Examples for Typed Clojure paper"
-  :url "http://samth.github.io/typed-clojure-draft.pdf"
+  :url "http://frenchy64.github.io/papers/esop16-short.pdf"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :repl-options {:nrepl-middleware [clojure.core.typed.repl/wrap-clj-repl]}
-  :dependencies [[org.clojure/clojure "1.7.0"]
-                 [org.clojure/core.typed "0.3.6-SNAPSHOT"]])
+  :dependencies [[org.clojure/clojure "1.8.0"]
+                 [org.clojure/core.typed "0.3.18"]])

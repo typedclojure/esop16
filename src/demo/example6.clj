@@ -1,4 +1,5 @@
-(ns ^:core.typed demo.example6
+(ns demo.example6
+  {:lang :core.typed}
   (:require [clojure.core.typed :refer [ann Str]]))
 
 (ann lunch '{:en Str :fr Str})

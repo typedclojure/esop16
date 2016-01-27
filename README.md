@@ -1,6 +1,6 @@
 # ESOP16 code
 
-Code to accompany [Typed Clojure paper](FIXME).
+Code to accompany [Typed Clojure paper](http://frenchy64.github.io/papers/esop16-short.pdf).
 
 Example 1 is in `src/demo/example1.clj`, and similarly for other examples.
 

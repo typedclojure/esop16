@@ -1,4 +1,5 @@
-(ns ^:core.typed demo.example7
+(ns demo.example7
+  {:lang :core.typed}
   (:require [clojure.core.typed :refer [ann defalias Str]]))
 
 ;; Placeholders

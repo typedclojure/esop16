@@ -1,4 +1,5 @@
 (ns demo.intro
+  {:lang :core.typed}
   (:import (java.io File))
   (:require [clojure.core.typed :refer [ann Str U]]))
 

@@ -1,4 +1,5 @@
-(ns ^:core.typed demo.example4
+(ns demo.example4
+  {:lang :core.typed}
   (:require [clojure.core.typed :refer [ann Kw Str]]))
 
 (ann hi [Kw -> Str]) ; multimethod type

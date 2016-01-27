@@ -1,4 +1,5 @@
-(ns ^:core.typed demo.example8
+(ns demo.example8
+  {:lang :core.typed}
   (:require [clojure.core.typed :refer [ann Int]]))
 
 (ann desserts [Order -> Int])

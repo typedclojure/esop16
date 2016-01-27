@@ -1,4 +1,5 @@
-(ns ^:core.typed demo.example5)
+(ns demo.example5
+  {:lang :core.typed})
 
 (def breakfast {:en "waffles" :fr "croissants"})
 (:en breakfast)
