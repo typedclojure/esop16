@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/typedclojure/esop16.svg?branch=master)](https://travis-ci.org/typedclojure/esop16)
+
 # ESOP16 code
 
 Code to accompany [Typed Clojure paper](http://frenchy64.github.io/papers/esop16-short.pdf).
