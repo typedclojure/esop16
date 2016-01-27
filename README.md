@@ -8,7 +8,7 @@ Example 1 is in `src/demo/example1.clj`, and similarly for other examples.
 
 ## Usage
 
-To check all examples, run `make test`.
+To check all examples, run `make test`, or `lein test` if you have Leiningen installed.
 
 For a Clojure REPL, run `make repl`. The `require` function loads and type checks namespaces.
 
