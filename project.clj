@@ -4,6 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/core.typed "0.3.19"]]
+                 [org.clojure/core.typed "0.3.20"]]
+  :repositories {"sonatype-oss-public" "https://oss.sonatype.org/content/groups/public/"}
   :injections [(require 'clojure.core.typed.load)
                (clojure.core.typed.load/monkey-patch-typed-load)])
